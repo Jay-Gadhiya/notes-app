@@ -1,3 +1,30 @@
-.container ul{
+.container .theme li{
     list-style: none;
+    display: inline-block;
+    padding-left: 0.5rem;
+    
+}
+.container .theme span{
+    font-size: larger;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    /* text-shadow: 0.9px 0.5px 0.4px black; */
+    
+}
+
+#bt-1{
+    background-color:rgb(241, 241, 114);
+}
+#bt-2{
+    background-color: rgb(114, 226, 241);
+}
+#bt-3{
+    background-color:rgb(152, 143, 240);
+
+}
+
+.btns {
+    border: 1px solid black;
+    box-shadow:  1px 1px black;
+    border-radius: 8px;
 }

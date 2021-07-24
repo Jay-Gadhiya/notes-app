@@ -4,6 +4,22 @@ showNotes();
 
 let addBtn = document.getElementById('addBtn');    //add note button.
 
+function button_1(){
+    // document.querySelector(body).style.backgroundColor = "rgb(241, 241, 114)";
+    document.body.style.backgroundColor = "rgb(241, 241, 114)";
+    console.log("yes");
+}
+function button_2(){
+    // document.querySelector(body).style.backgroundColor = "rgb(241, 241, 114)";
+    document.body.style.backgroundColor = "rgb(114, 226, 241)";
+    console.log("yes");
+}
+function button_3(){
+    // document.querySelector(body).style.backgroundColor = "rgb(241, 241, 114)";
+    document.body.style.backgroundColor = "rgb(152, 143, 240)";
+    console.log("yes");
+}
+
 addBtn.addEventListener("click", function(e){
 
     let addTxt = document.getElementById("addTxt"); //select text area.
@@ -16,8 +32,7 @@ addBtn.addEventListener("click", function(e){
     }
     notesObj.push(addTxt.value);
     localStorage.setItem("notes", JSON.stringify(notesObj));  
-    addTxt.value = "";
-    
+    addTxt.value = "";    
     showNotes();
 
 })
@@ -51,6 +66,8 @@ function showNotes() {
     else{
         notesElm.innerHTML = `Nothing to show! use "Add Note" section above to add notes.`
     }
+
+
 }
 
 
