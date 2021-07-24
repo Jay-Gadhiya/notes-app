@@ -19,6 +19,11 @@ function button_3(){
     document.body.style.backgroundColor = "rgb(152, 143, 240)";
     console.log("yes");
 }
+function button_4(){
+    // document.querySelector(body).style.backgroundColor = "rgb(241, 241, 114)";
+    document.body.style.backgroundColor = "rgb(255, 255, 255)";
+    console.log("yes");
+}
 
 addBtn.addEventListener("click", function(e){
 
