@@ -1,11 +1,13 @@
+
+
 showNotes();
 
-let addBtn = document.getElementById('addBtn');
+let addBtn = document.getElementById('addBtn');    //add note button.
 
 addBtn.addEventListener("click", function(e){
 
-    let addTxt = document.getElementById("addTxt");
-    let notes = localStorage.getItem("notes");
+    let addTxt = document.getElementById("addTxt"); //select text area.
+    let notes = localStorage.getItem("notes");     //key: notes in localStorage
     if (notes == null) {
         notesObj = [];
     }
@@ -29,7 +31,7 @@ function showNotes() {
         notesObj = JSON.parse(notes);
     }
 
-    let html = "";
+    let html = "";            //string
     notesObj.forEach(function(element, index){
         html = html +
          `
@@ -50,6 +52,9 @@ function showNotes() {
         notesElm.innerHTML = `Nothing to show! use "Add Note" section above to add notes.`
     }
 }
+
+
+//delet note function
 
 function deletNote(index){
     console.log('deleted');
